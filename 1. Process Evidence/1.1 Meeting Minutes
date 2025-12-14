@@ -1,40 +1,89 @@
-1.1 Meeting Minutes
- 📁 Folder: 
-/process_evidence/meeting_minutes/
- Meeting 1 – Project Kick-off
- Date: Week 1
- Participants: Tom Nicolaï, Titouan Lepesqueur, Paul Fortune Corroy
- Objectives: - Brainstorm project ideas related to aeronautics and AI - Select a feasible and innovative
- topic
- Discussion: Several ideas were proposed during the brainstorming session. The team agreed on
- focusing on aircraft maintenance and safety. The idea of detecting cracks on aircraft fuselages using
- computer vision was selected due to its strong industrial relevance and feasibility with available tools.
- Decisions: - Project topic validated: automatic detection of fuselage cracks - Use of AI and image
- processing
- Action items: - Research existing solutions and datasets (Team)
- Meeting 2 – Technical Research & Tool Selection
- Date: Week 2
- Participants: Team
- Discussion: The team conducted research on computer vision techniques and platforms. Roboflow was
- identified as a suitable solution due to its dataset management, model training, and API deployment
- features.
- Decisions: - Use Roboflow for dataset management and model training - Use a hosted detection model
- with API access
- Action items: - Collect a large dataset of fuselage crack images (Team)
- Meeting 3 – Dataset & Training
- Date: Week 3
- Participants: Team
- Discussion: The team collected close to 1000 images of aircraft fuselages with visible cracks. More than
- 800 images were used for training the model. The training process lasted approximately 5 hours on
- Roboflow.
- Decisions: - Validate dataset quality - Proceed with full model training
- 2
-Action items: - Monitor training performance - Prepare inference tests (Tom)
- Meeting 4 – Implementation & Integration
- Date: Week 4
- Participants: Team
- Discussion: Integration of the Roboflow model into a Python script was challenging, especially for
- retrieving the API key and inference URL. After several attempts, the team successfully implemented a
- working pipeline.
- Decisions: - Final validation of the detection pipeline - Prepare project artefacts and portfolio
- Action items: - Clean and comment the code - Prepare documentation
+# 📘 Meeting Minutes  
+## Process Evidence – Project Management
+
+📁 **Folder:** `/process_evidence/meeting_minutes/`
+
+This document summarises the main meetings held during the project and highlights key discussions, decisions, and action items.
+
+---
+
+## 🗓️ Meeting 1 – Project Kick-off
+
+**Date:** Week 1  
+**Participants:** Tom Nicolaï, Titouan Lepesqueur, Paul Fortune Corroy  
+
+### Objectives
+- Brainstorm project ideas related to aeronautics and artificial intelligence  
+- Select a feasible and innovative project topic  
+
+### Discussion
+Several project ideas were proposed during the brainstorming session.  
+The team agreed to focus on aircraft maintenance and safety.  
+The idea of **detecting cracks on aircraft fuselages using computer vision** was selected due to its strong industrial relevance and feasibility with available tools.
+
+### Decisions
+- Project topic validated: *Automatic detection of fuselage cracks*  
+- Use of artificial intelligence and image processing techniques  
+
+### Action Items
+- Research existing solutions and available datasets *(Team)*  
+
+---
+
+## 🗓️ Meeting 2 – Technical Research & Tool Selection
+
+**Date:** Week 2  
+**Participants:** Team  
+
+### Discussion
+The team carried out research on computer vision methods and development platforms.  
+**Roboflow** was identified as a suitable solution due to its features for dataset management, model training, and API-based deployment.
+
+### Decisions
+- Use Roboflow for dataset management and model training  
+- Deploy the detection model via a hosted API  
+
+### Action Items
+- Collect a large dataset of aircraft fuselage crack images *(Team)*  
+
+---
+
+## 🗓️ Meeting 3 – Dataset Preparation & Model Training
+
+**Date:** Week 3  
+**Participants:** Team  
+
+### Discussion
+Nearly **1000 images** of aircraft fuselages with visible cracks were collected.  
+More than **800 images** were used to train the detection model.  
+The training process lasted approximately **5 hours** on the Roboflow platform.
+
+### Decisions
+- Validate dataset quality  
+- Proceed with full model training  
+
+### Action Items
+- Monitor training performance  
+- Prepare inference tests *(Tom)*  
+
+---
+
+## 🗓️ Meeting 4 – Implementation & Integration
+
+**Date:** Week 4  
+**Participants:** Team  
+
+### Discussion
+Integrating the Roboflow model into a Python script proved challenging, particularly when retrieving the API key and inference URL.  
+After several attempts and debugging sessions, the team successfully implemented a fully working inference pipeline.
+
+### Decisions
+- Final validation of the crack detection pipeline  
+- Preparation of project artefacts and portfolio  
+
+### Action Items
+- Clean and comment the source code  
+- Prepare final documentation  
+
+---
+
