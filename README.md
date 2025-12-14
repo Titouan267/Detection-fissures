@@ -1,11 +1,9 @@
 # ✈️ Aircraft Fuselage Crack Detection  
-### Computer Vision Project Portfolio 🙂
+### Computer Vision Project Portfolio 
 
 ---
 
-## 👥 Team Information
-
-**Team number:** Team X  
+## 👥 Team Information  
 
 **Team members:**  
 - Tom Nicolaï  
