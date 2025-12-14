@@ -1,193 +1,150 @@
-# ✈️ Aircraft Fuselage Crack Detection  
-### Project Portfolio – Team X
+# Aircraft Fuselage Crack Detection  
+## Computer Vision Project Portfolio
 
 ---
 
-## 👥 Team Information
+### Team Information
 
-**Team Number:** Team X  
+**Team number:** Team X  
 
-**Team Members:**
-- **Tom Nicolaï**
-- **Titouan Lepesqueur**
-- **Paul Fortune Corroy**
-
----
-
-## 🧠 Project Title
-
-**Automatic Detection of Cracks on Aircraft Fuselages using Computer Vision**
+**Team members:**  
+- Tom Nicolaï  
+- Titouan Lepesqueur  
+- Paul Fortune Corroy  
 
 ---
 
-## 📌 Project Overview
+### Project Title
 
-This project focuses on the development of an **artificial intelligence system capable of detecting structural cracks on aircraft fuselages from images**.
-
-The system allows a user to upload an image, which is then analysed by a trained **computer vision model**.  
-If a crack is detected, it is automatically highlighted using a **red bounding box**.
-
-The objective of this project is to demonstrate how **AI-based image analysis** can support aircraft inspection and maintenance processes by:
-
-- improving reliability  
-- reducing inspection time  
-- enhancing overall aviation safety  
+**Automatic Detection of Cracks on Aircraft Fuselages Using Computer Vision**
 
 ---
 
-## 📑 Table of Contents
+### Project Overview
+
+The aim of this project is to develop an artificial intelligence system capable of detecting structural cracks on aircraft fuselages using image analysis.
+
+The system processes an input image of an aircraft fuselage and automatically identifies the presence of cracks. When a crack is detected, its location is highlighted on the image using a red bounding box.
+
+This project illustrates how computer vision techniques can assist aircraft inspection and maintenance by improving inspection accuracy, reducing manual effort, and increasing overall safety.
+
+---
+
+### Contents
 
 1. Project Objectives  
 2. System Architecture  
-3. Process Evidence  
-4. Project Methodology  
-5. Project Artefacts  
+3. Project Organisation and Process Evidence  
+4. Development Methodology  
+5. Project Deliverables  
 6. Results and Performance  
 7. Work Distribution  
-8. Project Timeline  
+8. Project Schedule  
 9. Conclusion  
 
 ---
 
-## 🎯 Project Objectives
+### Project Objectives
 
-The main objectives of this project are:
+The main objectives of this project are as follows:
 
-- Design a computer vision solution for detecting cracks on aircraft fuselages  
-- Train an AI model using a large annotated image dataset  
-- Deploy the trained model using an API-based approach  
-- Develop a Python program that communicates with the AI model  
-- Visualise detected cracks using red bounding boxes  
-
----
-
-## 🏗️ System Architecture
-
-The system follows a simple and efficient pipeline:
-
-1. The user provides an image of an aircraft fuselage  
-2. The image is sent to a **Roboflow-hosted AI model** using an API  
-3. The model analyses the image and detects cracks  
-4. Detection results are returned in **JSON format**  
-5. The Python script processes the results  
-6. Red bounding boxes are drawn on detected cracks  
-7. The final annotated image is displayed to the user  
+- Design a computer vision-based solution for crack detection on aircraft fuselages  
+- Train an AI model using a labelled image dataset  
+- Deploy the trained model through an API interface  
+- Implement a Python-based inference pipeline  
+- Visualise detected cracks using bounding boxes  
 
 ---
 
-## 🧾 Process Evidence
+### System Architecture
 
-This section documents the organisation, planning, and execution of the project.
+The system is composed of the following steps:
 
-### 📅 Meeting Minutes  
-📁 `/process_evidence/meeting_minutes/`
-
-- **Week 1 – Brainstorming & Topic Selection**  
-  Identification of project ideas and selection of fuselage crack detection as the final topic.
-
-- **Week 2 – Research & Tool Selection**  
-  Research on computer vision solutions and selection of **Roboflow** for model training and deployment.
-
-- **Week 3 – Dataset & Model Training**  
-  Collection of nearly 1000 images and training of the model using more than 800 annotated samples.
-
-- **Week 4 – Integration & Debugging**  
-  API integration, Python implementation, debugging, and validation of the final pipeline.
+1. An image of an aircraft fuselage is provided by the user  
+2. The image is transmitted to an AI model hosted on Roboflow  
+3. The model analyses the image and identifies potential cracks  
+4. Detection results are returned in JSON format  
+5. The Python application processes the output  
+6. Bounding boxes are drawn on detected cracks  
+7. The annotated image is displayed to the user  
 
 ---
 
-## 🔁 Project Methodology  
-📁 `/process_evidence/methodology/`
+### Project Organisation and Process Evidence
 
-The project follows an iterative development approach inspired by **Agile methodology**:
+This section summarises the planning and execution of the project.
 
-- Ideation and feasibility analysis  
+**Meeting Records**  
+Directory: `/process_evidence/meeting_minutes/`
+
+- **Week 1:** Idea generation and selection of fuselage crack detection as the project topic  
+- **Week 2:** Research on computer vision approaches and selection of Roboflow as the development platform  
+- **Week 3:** Dataset preparation and model training using annotated images  
+- **Week 4:** API integration, debugging, and system validation  
+
+---
+
+### Development Methodology
+
+Directory: `/process_evidence/methodology/`
+
+The project followed an iterative development approach inspired by Agile practices:
+
+- Definition of project scope and feasibility  
 - Technical research and tool selection  
 - Dataset collection and annotation  
-- Model training and evaluation  
-- API integration and software development  
-- Testing, validation, and documentation  
+- AI model training and evaluation  
+- Software integration and testing  
+- Final documentation  
 
 ---
 
-## 🧰 Project Artefacts
+### Project Deliverables
 
-### 💻 Source Code  
-📁 `/artefacts/source_code/`
+**Source Code**  
+Directory: `/artefacts/source_code/`
 
-The Python source code implements the full inference pipeline:
-- image loading  
-- API communication with Roboflow  
-- processing of detection results  
-- visualisation of cracks using red bounding boxes  
+The source code implements the complete inference pipeline, including image input handling, API communication, result processing, and visualisation of detected cracks.
 
----
+**Dataset**  
+Directory: `/artefacts/datasets/`
 
-### 🗃️ Dataset  
-📁 `/artefacts/datasets/`
+The dataset consists of approximately 1000 images of aircraft fuselages, covering both cracked and non-cracked surfaces. More than 800 annotated images were used for training the model.
 
-The dataset contains close to **1000 images** of aircraft fuselages, including cracked and non-cracked surfaces.
+**Results**  
+Directory: `/artefacts/results/`
 
-- Over **800 images** were used for training  
-- Images were manually annotated using bounding boxes  
-- Annotation focuses on precise crack localisation  
+The trained model demonstrates effective crack detection performance. Evaluation was carried out using standard object detection metrics such as precision, recall, and mean average precision (mAP).
 
 ---
 
-### 📊 Results and Performance  
-📁 `/artefacts/results/`
+### Work Distribution
 
-The trained model demonstrates **strong detection capabilities** on test images.
-
-Evaluation metrics include:
-- Precision  
-- Recall  
-- Mean Average Precision (mAP)  
-
-The model performs best on:
-- high-quality images  
-- good lighting conditions  
-- clear surface visibility  
+| Team member | Responsibilities | Contribution |
+|------------|------------------|--------------|
+| Tom Nicolaï | Model training, API integration, Python development | 45% |
+| Titouan Lepesqueur | Dataset preparation, annotation, research, documentation | 30% |
+| Paul Fortune Corroy | System design, testing, result analysis, documentation | 25% |
 
 ---
 
-## 👷 Work Distribution
+### Project Schedule
 
-| Team Member | Contribution |
-|------------|-------------|
-| **Tom Nicolaï** | Model training, API integration, Python development (45%) |
-| **Titouan Lepesqueur** | Dataset collection, annotation, research & documentation (30%) |
-| **Paul Fortune Corroy** | System design, testing, results analysis & documentation (25%) |
-
----
-
-## ⏱️ Project Timeline
-
-- **Week 1:** Brainstorming, project definition, initial research  
-- **Week 2:** Dataset collection and technical research  
-- **Week 3:** Image annotation and AI model training (~5 hours)  
-- **Week 4:** API integration, debugging, final validation & portfolio preparation  
+- **Week 1:** Project definition, brainstorming, initial research  
+- **Week 2:** Dataset collection and technical investigation  
+- **Week 3:** Image annotation and AI model training  
+- **Week 4:** System integration, debugging, validation, and final reporting  
 
 ---
 
-## ✅ Conclusion
+### Conclusion
 
-This project successfully demonstrates the feasibility of using **computer vision and machine learning** to support aircraft fuselage inspection.
+This project demonstrates the applicability of computer vision and machine learning techniques to aircraft fuselage inspection.
 
-By combining:
-- a **Roboflow-trained AI model**  
-- a **Python-based inference pipeline**  
+By combining a trained AI model with a Python-based inference pipeline, the team developed a functional system capable of detecting and highlighting cracks on aircraft fuselage images.
 
-the team developed a functional system capable of **detecting and highlighting cracks on aircraft fuselage images**.
-
-Beyond technical implementation, the project highlights:
-- solid engineering practices  
-- effective teamwork  
-- structured project management  
-
-over a four-week development period.
+The project highlights both the technical aspects of AI-based image analysis and the importance of structured teamwork throughout the development process.
 
 ---
 
-✈️ **End of Project Portfolio**
 
